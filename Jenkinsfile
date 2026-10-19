@@ -6,5 +6,10 @@ pipeline {
                 echo 'My Jenkins Pipeline'
             }
         }
+        stage('Check Docker') {
+            steps {
+                bat 'docker version'
+            }
+        }
     }
 }
