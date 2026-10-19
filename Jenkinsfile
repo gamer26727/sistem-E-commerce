@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Check Docker') {
             steps {
-                bat 'docker version'
+                bat '"C:/Users/gamer/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" version'
             }
         }
     }
